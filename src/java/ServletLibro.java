@@ -35,11 +35,11 @@ public class ServletLibro extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             libro = new ClassLibro(
-                request.getParameter("code"),
-                request.getParameter("name"),
-                request.getParameter("past"),
-                request.getParameter("edit"),
-                request.getParameter("year")    
+                request.getParameter("codigo"),
+                request.getParameter("nombre"),
+                request.getParameter("pasta"),
+                request.getParameter("editorial"),
+                request.getParameter("año")    
             );
             
             if(registroLibro==null){
